@@ -1,0 +1,7 @@
+namespace API_Pagamento.Controllers;
+
+public enum FormaPagamento
+{
+    CARTAO,
+    PIX
+}
