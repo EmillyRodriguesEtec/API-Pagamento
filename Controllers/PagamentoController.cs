@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json; 
 using System; 
 using System.Collections.Generic;
+using API_Pagamento.Models;
 
 namespace API_Pagamento.Controllers;
 
@@ -11,11 +12,7 @@ namespace API_Pagamento.Controllers;
 public class PagamentoController : ControllerBase
 {
 
-    private static List<PagamentoPix> pagamentos = new List<PagamentoPix>()
-    {
-        new PagamentoPix() {id_pagamento = "1", valor = 100, chave_pix = "minha chave pix", data_pagamento = DateTime.Now},
-        new PagamentoPix() {id_pagamento = "2", valor = 120, chave_pix = "sua chave pix", data_pagamento = DateTime.Now}
-    }; 
+    private static List<PagamentoPix> pagamentos = new List<PagamentoPix>(); 
 
     [HttpGet] 
     public IActionResult GetPagamentos() 

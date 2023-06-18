@@ -1,0 +1,8 @@
+namespace API_Pagamento.Models.Enuns;
+
+
+public enum FormaPagamento
+{
+    CARTAO,
+    PIX
+}
